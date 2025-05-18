@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Your Name] - Resume</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f9;
+      color: #333;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 2.2em;
+      text-align: center;
+    }
+    h2 {
+      font-size: 1.5em;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 5px;
+    }
+    .contact, .summary, .skills, .experience, .projects, .education {
+      margin-bottom: 20px;
+    }
+    .contact p {
+      margin: 5px 0;
+      text-align: center;
+    }
+    .skills ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .skills li {
+      background: #3498db;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 5px;
+      font-size: 0.9em;
+    }
+    .experience-item, .project-item {
+      margin-bottom: 15px;
+    }
+    .toggle-btn {
+      background: #3498db;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+    .toggle-btn:hover {
+      background: #2980b9;
+    }
+    .details {
+      display: none;
+      margin-top: 10px;
+      padding-left: 15px;
+      border-left: 3px solid #3498db;
+    }
+    .dark-mode {
+      background-color: #2c3e50;
+      color: #ecf0f1;
+    }
+    .dark-mode .container {
+      background: #34495e;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    .dark-mode h1, .dark-mode h2 {
+      color: #ecf0f1;
+    }
+    .dark-mode .skills li {
+      background: #2980b9;
+    }
+    .dark-mode .toggle-btn {
+      background: #2980b9;
+    }
+    .dark-mode .toggle-btn:hover {
+      background: #3498db;
+    }
+    #darkModeToggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #3498db;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    @media print {
+      body {
+        background: white;
+      }
+      .container {
+        box-shadow: none;
+        padding: 0;
+      }
+      #darkModeToggle, .toggle-btn {
+        display: none;
+      }
+      .details {
+        display: block !important;
+      }
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 15px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+      h2 {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <button id="darkModeToggle">Toggle Dark Mode</button>
+  <div class="container">
+    <h1>[ Ritik kumar gupta ]</h1>
+    <div class="contact">
+      <p>Email: [---------------------------------------------] | Phone: [ ---------------------------------------------] | LinkedIn: [---------------------------------------------]</p>
+      <p>Location: [---------------------------------------------] | GitHub: [---------------------------------------------]</p>
+    </div>
+
+    <div class="summary">
+      <h2>Professional Summary</h2>
+      <p> ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  </p>
+    </div>
+
+    <div class="Tech skills">
+      <h2>Skills</h2>
+      <ul>
+        <li> --------------------------------------------- </li>
+        <li> ---------------------------------------------</li>
+        <li> --------------------------------------------- </li>
+        <li>---------------------------------------------</li>
+        <li> --------------------------------------------- </li>
+        <li> --------------------------------------------- </li>
+        <li> --------------------------------------------- </li>
+        <li> --------------------------------------------- </li>
+        <li> ---------------------------------------------  </li>
+        <li> --------------------------------------------- </li>
+        <li> --------------------------------------------- </li>
+        <li> --------------------------------------------- </li>
+        <li> --------------------------------------------- </li>
+        <li> --------------------------------------------- </li>
+        <li> --------------------------------------------- </li>
+        
+        
+      </ul>
+    </div>
+
+    
+    <div class="experience">
+      <h2>Experience</h2>
+      <div class="experience-item">
+        <h3> ---------------------------------------------</h3>
+        <p><em> --------------------------------------------- </em></p>
+        <h3> --------------------------------------------- </h3>
+        <!-- Add more details as needed -->
+      </div>
+    </div>
+
+    <div class="projects">
+      <h2>Projects</h2>
+      <div class="project-item">
+        <h3>----------------------------------------------</h3>
+        <p>------------------------------------------------</p>
+        <h3> Made a To Do List Software </h3>
+        <p> It is made with the halp of  Html , Css , Javascript and Java </p>
+        <button class="toggle-btn" onclick="toggleDetails('project1')">Show Details</button>
+        <div id="project1" class="details">
+          <ul>
+            <li>-----------------------------------------</li>
+            <li>-----------------------------------------</li>
+            <li>-----------------------------------------</li>
+            <li>-----------------------------------------</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Add more projects here -->
+    </div>
+
+    <div class="education">
+      <h2>Education</h2>
+      <h3>[ ---------------------------------------------- ]</h3>
+      <h3>[ ---------------------------------------------- ]</h3>
+      <p><em>[ ------------------------------------------  ] </em></p>
+
+      
+      <!-- Add more education details if needed -->
+    </div>
+  </div>
+
+  <script>
+    // Toggle project details
+    function toggleDetails(id) {
+      const element = document.getElementById(id);
+      element.style.display = element.style.display === 'block' ? 'none' : 'block';
+    }
+
+    // Dark mode toggle
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    darkModeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      darkModeToggle.textContent = document.body.classList.contains('dark-mode')
+        ? 'Toggle Light Mode'
+        : 'Toggle Dark Mode';
+    });
+  </script>
+</body>
+</html>
